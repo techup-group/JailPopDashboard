@@ -1,0 +1,24 @@
+{
+  "template" : "arrest*",
+    "settings" : { "index.refresh_interval" : "60s" }, 
+    "mappings" : { 
+        "arrest" : { 
+            "_all" : { "enabled" : false }, 
+            "properties" : { 
+                "@timestamp" : { "type" : "date", "format" : "dateOptionalTime" }, 
+		"@version" : { "type" : "string", "index" : "not_analyzed" },
+		"type" : { "type" : "string", "index" : "not_analyzed" },
+		"path" : { "type" : "string", "index" : "not_analyzed" },
+		"host" : { "type" : "string", "index" : "not_analyzed" },
+                "booking" : { "type" : "string", "index" : "not_analyzed" }, 
+		"race" : { "type" : "string", "index" : "not_analyzed" },
+		"sex" : { "type" : "string", "index" : "not_analyzed" },
+		"dob" : { "type" : "date", "index" : "not_analyzed" },
+		"arrest_date" : { "type" : "date", "index" : "not_analyzed" },
+		"booking_date" : { "type" : "date", "index" : "not_analyzed" },
+		"release_date" : { "type" : "date", "index" : "not_analyzed" },
+		"release_remarks" : { "type" : "string", "index" : "not_analyzed" }
+            } 
+        } 
+    } 
+}
