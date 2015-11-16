@@ -13,7 +13,7 @@ cd /opt/data; git clone https://github.com/code-for-tb/JailPopDashboard.git
 
 * Issue the following command to launch the ELK container. Adjust ports as desired
 
-docker run -it  -v /opt/data/logstash:/etc/logstash -p 5601:5601 -p 9200:9200 -p 5000:5000  --name elk sebp/elk
+docker run -it  -v /opt/data/JailPopDashboard/logstash:/etc/logstash -p 5601:5601 -p 9200:9200 -p 5000:5000  --name elk sebp/elk
 
 * Point your browser to the Kibana interface
 
