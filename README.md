@@ -17,7 +17,7 @@ docker run -it  -v /opt/data/JailPopDashboard/logstash:/etc/logstash -p 5601:560
 
 * Point your browser to the Kibana interface
 
-http://<ip>:5601
+http://public_ip:5601
 
 * Set the time range to the last 5 years, and enjoy your browsing.
 
